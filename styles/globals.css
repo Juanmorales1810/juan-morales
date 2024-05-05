@@ -55,16 +55,6 @@
         animation-range: exit;
     }
 
-    li a {
-        opacity: calc(0.5 + (var(--active)));
-        position: relative;
-        transition: opacity var(--transition);
-    }
-
-    li:is(:hover, :focus-visible) a {
-        opacity: 1;
-    }
-
     nav li {
         animation: activate both steps(1);
     }
@@ -75,10 +65,6 @@
         }
     }
 
-    a span {
-        position: relative;
-    }
-
     .nav__content {
         grid-template-columns: auto calc(var(--expanded) * (3 * var(--item))) auto;
         transition: grid-template-columns 1s var(--elastic);
@@ -87,16 +73,5 @@
         to {
             --expanded: 1;
         }
-    }
-}
-.arrow {
-    animation: arrow-opacity 1s linear both;
-    animation-timeline: scroll();
-    animation-range: 0 100px;
-}
-
-@keyframes arrow-opacity {
-    to {
-        @apply opacity-0;
     }
 }

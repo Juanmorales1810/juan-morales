@@ -6,10 +6,6 @@ export const siteConfig = {
         "Make beautiful websites regardless of your design experience.",
     navItems: [
         {
-            label: "Home",
-            href: "/",
-        },
-        {
             label: "Portfolio",
             href: "/portfolio",
         },
@@ -18,20 +14,7 @@ export const siteConfig = {
             href: "/blog",
         },
     ],
-    navMenuItems: [
-        {
-            label: "Home",
-            href: "/",
-        },
-        {
-            label: "Portfolio",
-            href: "/portfolio",
-        },
-        {
-            label: "Blog",
-            href: "/blog",
-        },
-    ],
+
     links: {
         github: "https://github.com/Juanmorales1810",
         twitter: "https://twitter.com/getnextui",
