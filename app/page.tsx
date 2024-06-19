@@ -1,12 +1,10 @@
 import { AuroraBackground } from "@/components/aurora-background";
 import { GithubIcon, LinkedIn } from "@/components/icons";
 import Experience from "@/components/experience";
-import { Snippet } from "@nextui-org/snippet";
+import Proyects from "@/components/proyects";
 import { Button } from "@nextui-org/button";
 import Navbar from "@/components/navbar";
 import { Link } from "@nextui-org/link";
-import { Code } from "@nextui-org/code"
-import Proyects from "@/components/proyects";
 
 export default function Home() {
 	return (
