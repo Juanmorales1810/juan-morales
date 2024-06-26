@@ -1,8 +1,8 @@
 
-import { Link } from "@nextui-org/link";
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "./theme-switch";
 import { DevIcon } from "./icons";
+import Link from "next/link";
 
 export default function Navbar() {
     return (
