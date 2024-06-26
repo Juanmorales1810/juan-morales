@@ -231,12 +231,12 @@ export const Nextjs = (props: IconSvgProps) => (
 				y1="56.385%"
 				y2="96.08%"
 			>
-				<stop offset="0%" stop-color="#FFF"></stop>
-				<stop offset="100%" stop-color="#FFF" stop-opacity="0"></stop>
+				<stop offset="0%" stopColor="#FFF"></stop>
+				<stop offset="100%" stopColor="#FFF" stopOpacity="0"></stop>
 			</linearGradient>
 			<linearGradient id="d" x1="50%" x2="49.953%" y1="0%" y2="73.438%">
-				<stop offset="0%" stop-color="#FFF"></stop>
-				<stop offset="100%" stop-color="#FFF" stop-opacity="0"></stop>
+				<stop offset="0%" stopColor="#FFF"></stop>
+				<stop offset="100%" stopColor="#FFF" stopOpacity="0"></stop>
 			</linearGradient>
 			<circle id="a" cx="128" cy="128" r="128"></circle>
 		</defs>
@@ -293,8 +293,8 @@ export const Tailwind = (props: IconSvgProps) => (
 
 		<defs
 		><linearGradient x1="-2.778%" y1="32%" x2="100%" y2="67.556%" id="gradient">
-				<stop stop-color="#2298BD" offset="0%"></stop>
-				<stop stop-color="#0ED7B5" offset="100%"></stop>
+				<stop stopColor="#2298BD" offset="0%"></stop>
+				<stop stopColor="#0ED7B5" offset="100%"></stop>
 			</linearGradient></defs>
 		<path
 			d="M128 0C93.867 0 72.533 17.067 64 51.2 76.8 34.133 91.733 27.733 108.8 32c9.737 2.434 16.697 9.499 24.401 17.318C145.751 62.057 160.275 76.8 192 76.8c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C174.249 14.743 159.725 0 128 0ZM64 76.8C29.867 76.8 8.533 93.867 0 128c12.8-17.067 27.733-23.467 44.8-19.2 9.737 2.434 16.697 9.499 24.401 17.318C81.751 138.857 96.275 153.6 128 153.6c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C110.249 91.543 95.725 76.8 64 76.8Z"
