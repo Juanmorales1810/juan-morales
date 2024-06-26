@@ -5,12 +5,13 @@ import Proyects from "@/components/proyects";
 import { Button } from "@nextui-org/button";
 import Navbar from "@/components/navbar";
 import { Link } from "@nextui-org/link";
+import Image from "next/image";
 
 export default function Home() {
 	return (
 		<section className="relative flex w-full flex-col items-center justify-center gap-4">
 
-			<AuroraBackground children={
+			<AuroraBackground>
 				<header
 					className="flex flex-col items-center justify-center gap-10 md:justify-around w-full max-w-5xl p-4"
 				>
@@ -18,14 +19,18 @@ export default function Home() {
 						className="flex flex-col items-center justify-center gap-10 z-20  w-full max-w-2xl h-auto md:flex-row"
 					>
 						<div className="w-1/2 relative md:w-1/3 group">
-							<img
+							<Image
 								src="/Profile.webp"
 								alt="Profile picture of the author"
+								width={210}
+								height={210}
 								className="relative w-full z-30 object-cover rounded-full dark:saturate-50"
 							/>
-							<img
+							<Image
 								src="/Profile.webp"
 								alt="Profile picture of the author"
+								width={210}
+								height={210}
 								className="absolute z-20 top-0 left-0 blur-xl w-full object-cover rounded-full dark:saturate-50 group-hover:scale-105 group-hover:brightness-100 transition-all duration-300 ease-in-out"
 							/>
 						</div>
@@ -63,15 +68,10 @@ export default function Home() {
 						</div>
 					</div>
 				</header>
-			} />
+			</AuroraBackground>
 			<Navbar />
 
-
-			<div className="flex gap-3 mt-56">
-				<Experience />
-			</div>
-			<Proyects />
-			<div className="mt-8">
+			<div className="mt-56">
 				<div
 					className="flex flex-col justify-center items-center group gap-4 w-full max-w-5xl md:gap-10 md:flex-row pb-6"
 				>
@@ -108,6 +108,13 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
+			<div className="flex gap-3 mt-4">
+				<Experience />
+			</div>
+			<div className="flex gap-3">
+				<Proyects />
+			</div>
+
 		</section>
 	);
 }
