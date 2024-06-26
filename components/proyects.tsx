@@ -3,6 +3,9 @@
 import { motion, useAnimation, Variants } from "framer-motion";
 import { Image } from "@nextui-org/image";
 import { useEffect } from "react";
+import { Button } from "@nextui-org/button";
+import { Chip } from "@nextui-org/chip";
+import { MongoDB, Nextjs, Tailwind, TypeScript } from "./icons";
 
 interface ScrollAnimationProps {
     control: any;
@@ -87,22 +90,22 @@ export default function Proyects() {
     const control3 = useAnimation();
     const control4 = useAnimation();
 
-    useScrollAnimation({ control: control2, start: 1200, end: 1850 });
-    useScrollAnimation({ control: control3, start: 1851, end: 2650 });
-    useScrollAnimation({ control: control4, start: 2651, end: 3200 });
+    useScrollAnimation({ control: control2, start: 1700, end: 2250 });
+    useScrollAnimation({ control: control3, start: 2251, end: 3150 });
+    useScrollAnimation({ control: control4, start: 3151, end: 3600 });
     useEffect(() => {
         const scrollHandler = () => {
             const scrollY = window.scrollY;
             console.log(scrollY);
 
 
-            if (scrollY <= 1850) {
+            if (scrollY <= 2250) {
                 control1.start("right");
             }
-            if (scrollY > 1851) {
+            if (scrollY > 2251) {
                 control1.start("left");
             }
-            if (scrollY > 2651) {
+            if (scrollY > 3151) {
                 control1.start("right");
             }
         };
@@ -115,7 +118,7 @@ export default function Proyects() {
     }, [control1]);
 
     return (
-        <section className="w-full max-w-6xl px-4">
+        <section className="flex flex-col w-full max-w-6xl px-4">
             <motion.div
                 className="sticky lg:flex justify-center items-center top-[450px] w-1/2 h-full z-20 hidden"
                 variants={variants}
@@ -164,7 +167,7 @@ export default function Proyects() {
                             isBlurred
                             width={420}
                             alt="NextUI hero Image"
-                            src="proyects/realidad.jpg"
+                            src="proyects/pichirika.webp"
                         />
                     </figure>
                     <figure className="absolute -top-[80px] left-[300px] w-48 h-48">
@@ -253,14 +256,55 @@ export default function Proyects() {
                     </h3>
                     <p
                         className=
-                        "mt-4 text-xl font-normal lg:text-2xl text-zinc-900 dark:text-white"
+                        "mt-4 text-lg font-normal text-pretty lg:text-xl text-zinc-900 dark:text-white"
 
                     >
-                        Comenzamos evaluando tus objetivos y preferencias.
-                        Juntos, diseñamos un plan personalizado que refleje
-                        nuestra experiencia comprobada en videos de
-                        entrenamiento de última generación.
+                        Resto-App es una web app para los restaurantes que cuenta con una landing page y con un gestor de pedidos. La landing page es una web estática que muestra información sobre el restaurante, la carta y la ubicación. El gestor de pedidos es una web dinámica que permite a los clientes realizar pedidos y a los empleados gestionarlos. También cuenta con un panel de administración para gestionar los productos, categorías, pedidos y empleados.
                     </p>
+                    <div className="mt-4 flex gap-2">
+                        <Chip size="sm" variant="shadow"
+                            classNames={
+                                {
+                                    base: "bg-zinc-950 text-white",
+                                }
+                            }
+                            endContent={<Nextjs />}
+                        >
+                            Next.js
+                        </Chip>
+                        <Chip size="sm" variant="shadow" color="success"
+                            classNames={
+                                {
+                                    base: "bg-green-700 text-white",
+                                }
+                            }
+                            endContent={<MongoDB />}
+                        >
+                            MongoDB
+                        </Chip>
+                        <Chip size="sm" variant="shadow" color="primary"
+                            classNames={
+                                {
+                                    base: "bg-blue-500 text-white",
+                                }
+                            }
+                            endContent={<TypeScript />}
+                        >
+                            TypeScript
+                        </Chip>
+                        <Chip size="sm" variant="shadow" color="primary"
+                            classNames={
+                                {
+                                    base: "bg-blue-800 text-white",
+                                }
+                            }
+                            endContent={<Tailwind />}
+                        >
+                            Tailwind CSS
+                        </Chip>
+
+                    </div>
+                    <Button className="mt-4" color="secondary">Ver más</Button>
                 </div>
             </div>
             <div className="relative flex flex-col-reverse justify-center items-center w-full h-full min-h-[calc(100vh-116px)] z-10 lg:flex-row">
@@ -273,13 +317,54 @@ export default function Proyects() {
                     </h3>
                     <p
                         className=
-                        "mt-4 text-xl font-normal lg:text-2xl text-zinc-900 dark:text-white"
+                        "mt-4 text-lg font-normal text-pretty lg:text-xl text-zinc-900 dark:text-white"
                     >
-                        Exploramos nuestra rica trayectoria de éxitos,
-                        inspirándote con historias reales. Te sumergirás en
-                        sesiones de entrenamiento que capturan la esencia de la
-                        fama, equilibrando la ambición con la realidad.
+                        Es un portal web para la adopción y cuidado de animales es una plataforma virtual que facilita la conexión entre mascotas necesitadas de hogar y personas interesadas en brindarles amor y cuidados.
                     </p>
+                    <div className="mt-4 flex gap-2">
+                        <Chip size="sm" variant="shadow"
+                            classNames={
+                                {
+                                    base: "bg-zinc-950 text-white",
+                                }
+                            }
+                            endContent={<Nextjs />}
+                        >
+                            Next.js
+                        </Chip>
+                        <Chip size="sm" variant="shadow" color="success"
+                            classNames={
+                                {
+                                    base: "bg-green-700 text-white",
+                                }
+                            }
+                            endContent={<MongoDB />}
+                        >
+                            MongoDB
+                        </Chip>
+                        <Chip size="sm" variant="shadow" color="primary"
+                            classNames={
+                                {
+                                    base: "bg-blue-500 text-white",
+                                }
+                            }
+                            endContent={<TypeScript />}
+                        >
+                            TypeScript
+                        </Chip>
+                        <Chip size="sm" variant="shadow" color="primary"
+                            classNames={
+                                {
+                                    base: "bg-blue-800 text-white",
+                                }
+                            }
+                            endContent={<Tailwind />}
+                        >
+                            Tailwind CSS
+                        </Chip>
+
+                    </div>
+                    <Button className="mt-4" color="secondary">Ver más</Button>
                 </div>
                 <div className="flex justify-center items-center lg:w-1/2">
                     <figure className="lg:hidden">
@@ -287,7 +372,7 @@ export default function Proyects() {
                             isBlurred
                             width={420}
                             alt="NextUI hero Image"
-                            src="proyects/realidad.jpg"
+                            src="proyects/pichirika.webp"
                         />
                     </figure>
                     <Image
@@ -326,13 +411,54 @@ export default function Proyects() {
                     </h3>
                     <p
                         className=
-                        "mt-4 text-xl font-normal lg:text-2xl text-zinc-900 dark:text-white"
+                        "mt-4 text-lg font-normal text-pretty lg:text-xl text-zinc-900 dark:text-white"
                     >
-                        Experimenta la grandeza a través de nuestros videos
-                        exclusivos. Mantenemos una conexión cercana, brindando
-                        apoyo realista y ajustes personalizados. Así, te guiamos
-                        hacia el estrellato en tus propias metas de maratón.
+                        Es una web para la venta de artículos de indumentaria, calzado y accesorios. La web cuenta con un carrito de compras, un panel de administración para gestionar los productos, categorías y pedidos.
                     </p>
+                    <div className="mt-4 flex gap-2">
+                        <Chip size="sm" variant="shadow"
+                            classNames={
+                                {
+                                    base: "bg-zinc-950 text-white",
+                                }
+                            }
+                            endContent={<Nextjs />}
+                        >
+                            Next.js
+                        </Chip>
+                        <Chip size="sm" variant="shadow" color="success"
+                            classNames={
+                                {
+                                    base: "bg-green-700 text-white",
+                                }
+                            }
+                            endContent={<MongoDB />}
+                        >
+                            MongoDB
+                        </Chip>
+                        <Chip size="sm" variant="shadow" color="primary"
+                            classNames={
+                                {
+                                    base: "bg-blue-500 text-white",
+                                }
+                            }
+                            endContent={<TypeScript />}
+                        >
+                            TypeScript
+                        </Chip>
+                        <Chip size="sm" variant="shadow" color="primary"
+                            classNames={
+                                {
+                                    base: "bg-blue-800 text-white",
+                                }
+                            }
+                            endContent={<Tailwind />}
+                        >
+                            Tailwind CSS
+                        </Chip>
+
+                    </div>
+                    <Button className="mt-4" color="secondary">Ver más</Button>
                 </div>
             </div>
         </section>
