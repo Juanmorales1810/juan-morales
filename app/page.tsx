@@ -6,6 +6,7 @@ import { Button } from "@nextui-org/button";
 import Navbar from "@/components/navbar";
 import { Link } from "@nextui-org/link";
 import Image from "next/image";
+import { Input, Textarea } from "@nextui-org/input";
 
 export default function Home() {
 	return (
@@ -53,7 +54,7 @@ export default function Home() {
 								</h1>
 								<p className="text-lg text-slate-700 dark:text-slate-100 font-semibold text-balance">
 									Tengo mas de 3 años de experiencia.<br />Soy desarrollador
-									Fron-End y vivo en Argentina - San Juan. Especializado en
+									Front-End y vivo en Argentina - San Juan. Especializado en
 									desarrollo de web apps
 								</p>
 							</div>
@@ -71,7 +72,10 @@ export default function Home() {
 			</AuroraBackground>
 			<Navbar />
 
-			<div className="mt-56">
+			<section className="flex gap-3 mt-16 px-2">
+				<Experience />
+			</section>
+			<section className="mt-4">
 				<div
 					className="flex flex-col justify-center items-center group gap-4 w-full max-w-5xl md:gap-10 md:flex-row pb-6"
 				>
@@ -107,13 +111,28 @@ export default function Home() {
 						/>
 					</div>
 				</div>
-			</div>
-			<div className="flex gap-3 mt-4">
-				<Experience />
-			</div>
-			<div className="flex gap-3">
+			</section>
+
+			<section className="flex gap-3">
 				<Proyects />
-			</div>
+			</section>
+
+			<section className="w-full max-w-5xl px-2">
+				<div className="flex justify-center items-center w-full max-w-5xl">
+					<div className="flex justify-center items-center w-1/2">
+						<p>Trabajemos</p>
+					</div>
+					<div className="w-1/2">
+						<form className="flex gap-2 flex-col justify-center items-center" action="">
+							<Input type="text" size="sm" placeholder="Nombre y Apellido" />
+							<Input type="email" size="sm" placeholder="Email" />
+							<Textarea placeholder="Escribime un mensaje" />
+							<Button className="w-28" variant="shadow" color="secondary">Enviar</Button>
+						</form>
+					</div>
+				</div>
+			</section>
+
 
 		</section>
 	);
