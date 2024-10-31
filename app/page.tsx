@@ -1,5 +1,5 @@
 import { AuroraBackground } from "@/components/aurora-background";
-import { GithubIcon, LinkedIn } from "@/components/icons";
+import { GithubIcon, LinkedIn, WhatsAppIcon } from "@/components/icons";
 import Experience from "@/components/experience";
 import Proyects from "@/components/proyects";
 import { Button } from "@nextui-org/button";
@@ -92,7 +92,7 @@ export default function Home() {
 						<br />
 						<p>
 							Ahí descubrí lo que es el html y el css, averiguando más me tope con&nbsp;
-							<strong className="text-yellow-500 dark:text-yellow-400"
+							<strong className="text-yellow-700 dark:text-yellow-400"
 							>Javascript&nbsp;</strong>abriendo un nuevo mundo de posibilidades, aun sigo en la busca de conocimeito
 							y trato dia a dia en aprender nuevas teconologias y el manejo de ultilidades
 							para mejorar mis habilidades de desarrolador.
@@ -117,17 +117,33 @@ export default function Home() {
 				<Proyects />
 			</section>
 
-			<section className="w-full max-w-5xl px-2">
+			<section className="w-full max-w-5xl px-2 my-16">
 				<div className="flex justify-center items-center w-full max-w-5xl">
-					<div className="flex justify-center items-center w-1/2">
-						<p>Trabajemos</p>
-					</div>
-					<div className="w-1/2">
+					<section className="px-4 h-full">
+						<div className="grid items-center grid-cols-1 gap-4 mx-auto max-w-7xl">
+							<div>
+								<p className="mb-1 text-base font-medium md:text-xl text-secondary">Hagamos una App</p>
+								<h2 className="mb-6 text-3xl font-bold md:leading-tight md:text-4xl md:mb-4">Contactame para hacer realidad tus ideas</h2>
+								<div className="flex flex-col mb-2 space-x-0 space-y-2 sm:flex-row sm:space-x-2 sm:space-y-0">
+									<Button color="secondary" variant="shadow" className="w-full shadow sm:w-auto">Envíame un Email</Button>
+									<Button
+										color="secondary"
+										variant="ghost"
+										className="w-full sm:w-auto gruop"
+										endContent={<WhatsAppIcon className="fill-secondary group-hover:fill-zinc-50 transition-colors" />}
+									>
+										Háblame al WhatsApp
+									</Button>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<div className="w-full">
 						<form className="flex gap-2 flex-col justify-center items-center" action="">
 							<Input type="text" size="sm" placeholder="Nombre y Apellido" />
 							<Input type="email" size="sm" placeholder="Email" />
 							<Textarea placeholder="Escribime un mensaje" />
-							<Button className="w-28" variant="shadow" color="secondary">Enviar</Button>
 						</form>
 					</div>
 				</div>
