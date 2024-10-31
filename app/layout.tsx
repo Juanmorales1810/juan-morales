@@ -37,26 +37,16 @@ export default function RootLayout({
 			<head />
 			<body
 				className={clsx(
-					"bg-background font-sans antialiased bg-gradient-to-br from-purple-100 via-fuchsia-100 to-violet-200 dark:bg-gradient-to-br dark:from-zinc-900 dark:to-neutral-900",
+					"font-sans antialiased",
 					fontSans.variable
 				)}
 			>
 				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-					<div className="relative flex flex-col w-full">
+					<div className="relative flex flex-col w-full bg-gradient-to-br from-purple-100 via-fuchsia-100 to-violet-200 dark:bg-gradient-to-br dark:from-zinc-900 dark:to-neutral-900">
+						<div className="absolute z-0 h-full w-full bg-[radial-gradient(#d4d4d8_1px,transparent_1px)] dark:bg-[radial-gradient(#27272a_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
 						<main className="mx-auto w-full flex-grow">
 							{children}
 						</main>
-						{/* <footer className="w-full flex items-center justify-center py-3">
-							<Link
-								isExternal
-								className="flex items-center gap-1 text-current"
-								href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"
-								title="nextui.org homepage"
-							>
-								<span className="text-default-600">Powered by</span>
-								<p className="text-primary">NextUI</p>
-							</Link>
-						</footer> */}
 					</div>
 				</Providers>
 			</body>
