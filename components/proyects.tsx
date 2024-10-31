@@ -111,7 +111,7 @@ export default function AboutScroll() {
     // Usa los hooks fuera de condicionales
     useScrollAnimation({ control: control2, startOffset: 800 + windowHeight, endOffset: 800 + windowHeight * 2 });
     useScrollAnimation({ control: control3, startOffset: 801 + windowHeight * 2, endOffset: 800 + windowHeight * 3 });
-    useScrollAnimation({ control: control4, startOffset: 801 + windowHeight * 3, endOffset: (800 - (windowHeight / 3)) + windowHeight * 4 });
+    useScrollAnimation({ control: control4, startOffset: 801 + windowHeight * 3, endOffset: (400 - (windowHeight / 6)) + windowHeight * 4 });
 
     console.log("Tamaño de ventana:", windowHeight);
 
