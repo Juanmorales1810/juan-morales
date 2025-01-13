@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Navbar() {
     return (
-        <nav className="sticky top-8 flex rounded-full overflow-hidden bg-violet-300 text-zinc-950 dark:bg-zinc-800 dark:text-zinc-50 h-12 text-sm pl-0 group z-50">
+        <nav className="sticky top-8 flex rounded-full overflow-hidden bg-violet-300/25 text-zinc-950 h-12 text-sm pl-0 group z-50 backdrop-blur-xl dark:bg-zinc-800/25 dark:text-zinc-50">
             <div className="nav__content grid">
                 <Link href="/" className="w-12 grid place-items-center text-zinc-950 dark:text-zinc-50">
                     <DevIcon className="stroke-zinc-800 dark:stroke-white fill-none" />
