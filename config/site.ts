@@ -1,9 +1,9 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-    name: "",
+    name: "Juan Morales - Frontend Developer",
     description:
-        "Make beautiful websites regardless of your design experience.",
+        "Desarrollador Frontend especializado en React, Next.js, Astro y React Native. Vivo en Argentina - San Juan.",
     navItems: [
         {
             label: "Portfolio",
