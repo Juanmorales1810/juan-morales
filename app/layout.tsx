@@ -3,9 +3,8 @@ import { Metadata, Viewport } from "next";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Providers } from "./providers";
-import { Link } from "@nextui-org/link";
 import clsx from "clsx";
-import { ThemeSwitch } from "@/components/theme-switch";
+
 
 export const viewport: Viewport = {
 	themeColor: [
