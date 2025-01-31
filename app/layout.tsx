@@ -4,11 +4,12 @@ import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Providers } from "./providers";
 import clsx from "clsx";
+import Footer from "@/components/footer";
 
 
 export const viewport: Viewport = {
 	themeColor: [
-		{ color: "#18181b", media: "(prefers-color-scheme: light)" },
+		{ color: "#f3e8ff", media: "(prefers-color-scheme: light)" },
 		{ color: "#18181b", media: "(prefers-color-scheme: dark)" },
 	],
 }
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
 	},
 	description: siteConfig.description,
 	icons: {
-		icon: "/favicon.ico",
+		icon: "/favicon.svg",
 		shortcut: "/favicon-16x16.png",
 		apple: "/apple-touch-icon.png",
 	},
@@ -46,6 +47,7 @@ export default function RootLayout({
 						<main className="mx-auto w-full flex-grow">
 							{children}
 						</main>
+						<Footer />
 					</div>
 				</Providers>
 			</body>

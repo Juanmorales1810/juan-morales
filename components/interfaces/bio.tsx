@@ -1,7 +1,7 @@
 
 export default function Bio() {
     return (
-        <section className="mt-4 px-4">
+        <section className="py-24 px-4">
             <div
                 className="flex flex-col justify-center items-center group gap-4 w-full max-w-5xl md:gap-10 md:flex-row pb-6"
             >

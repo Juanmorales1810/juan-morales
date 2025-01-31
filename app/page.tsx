@@ -7,6 +7,7 @@ import Bio from "@/components/interfaces/bio";
 import { Button } from "@nextui-org/button";
 import Navbar from "@/components/navbar";
 import Link from "next/link";
+import Cta from "@/components/interfaces/cta";
 
 export default function Home() {
 	return (
@@ -17,6 +18,7 @@ export default function Home() {
 			<Bio />
 			<Proyects />
 			<Button as={Link} href="/portfolio" className="mt-4 w-40 h-12" color="secondary">Ver más proyectos</Button>
+			<Cta />
 			<Contact />
 		</section>
 	);
