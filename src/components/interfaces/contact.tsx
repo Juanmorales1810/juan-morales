@@ -48,20 +48,25 @@ export default function Contact() {
     };
 
     return (
-        <section className="py-32">
-            <div className="container">
-                <div className="mx-auto flex max-w-screen-xl flex-col justify-between gap-10 lg:flex-row lg:gap-28">
+        <section id="Contacto" className="py-32">
+            <div className="container px-4">
+                <div className="mx-auto flex flex-col justify-between gap-10 lg:flex-row lg:gap-28">
                     <div className="mx-auto flex w-full max-w-lg flex-col justify-between gap-10">
                         <div className="text-center space-y-4 lg:text-left">
-                            <h1 className="mb-2 text-5xl font-semibold text-secondary lg:mb-1 lg:text-6xl">
+                            <h1 className="mb-2 text-5xl font-semibold bg-gradient-to-br from-violet-300 via-violet-600 to-violet-200 dark:from-zinc-100 dark:via-zinc-300 dark:to-zinc-50 bg-clip-text text-transparent drop-shadow-[0_0px_7px_rgba(255,255,255,0.55)] lg:mb-1 lg:text-6xl">
                                 Hagamos una App
                             </h1>
-                            <p className="text-secondary-700">
-                                Contactame para hacer realidad tus ideas
+                            <p className="text-zinc-700 mt-3.5 text-sm font-light leading-7 dark:text-zinc-400 lg:text-lg lg:leading-8">
+                                ¿Tienes una idea en mente? ¿Quieres crear una
+                                aplicación web o móvil? Estoy aquí para ayudarte
+                                a hacerla realidad. Con mi experiencia en
+                                desarrollo web y móvil, puedo ayudarte a
+                                convertir tu visión en una aplicación funcional
+                                y atractiva. No dudes en ponerte en contacto
                             </p>
                         </div>
                         <div className="mx-auto w-fit lg:mx-0">
-                            <h3 className="mb-6 text-center text-secondary text-2xl font-semibold lg:text-left">
+                            <h3 className="mb-6 text-center text-primary text-2xl font-semibold dark:text-zinc-200 lg:text-left">
                                 Detalles de contacto
                             </h3>
                             <ul className="ml-4 list-disc space-y-2 text-secondary-700">
@@ -69,20 +74,37 @@ export default function Contact() {
                                     <span className="font-bold">
                                         Teléfono:&nbsp;
                                     </span>
-                                    (+54) 264 621 6944
+                                    <a
+                                        href="tel:+542646216944"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-secondary-700 hover:text-secondary-900 dark:text-zinc-200 dark:hover:text-zinc-100"
+                                    >
+                                        (+54) 264 621 6944
+                                    </a>
                                 </li>
                                 <li>
                                     <span className="font-bold">
                                         Email:&nbsp;
                                     </span>
-                                    <a href="" className="underline">
+                                    <a
+                                        href="mailto:juan.exequiel.morales@gmail.com"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-secondary-700 hover:text-secondary-900 dark:text-zinc-200 dark:hover:text-zinc-100"
+                                    >
                                         juan.exequiel.morales@gmail.com
                                     </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div className="mx-auto flex w-full max-w-screen-lg flex-col gap-6 rounded-lg bg-zinc-950/10 backdrop-blur-md p-10">
+                    <div className="mx-auto flex w-full max-w-screen-lg flex-col justify-center gap-6 rounded-lg bg-zinc-950/10 backdrop-blur-md p-10">
+                        <h3 className="mb-6 text-center text-primary text-2xl font-semibold dark:text-zinc-200 lg:text-left">
+                            <span className="text-2xl font-semibold text-primary dark:text-zinc-200">
+                                Competa el formulario para contactarme
+                            </span>
+                        </h3>
                         <Form {...form}>
                             <form
                                 id="form"
@@ -156,7 +178,7 @@ export default function Contact() {
                                             target="_blank"
                                         >
                                             Háblame al WhatsApp
-                                            <WhatsAppIcon className="ml-2 fill-secondary group-hover:fill-zinc-50 transition-colors" />
+                                            <WhatsAppIcon className="ml-2" />
                                         </Link>
                                     </Button>
                                 </div>
