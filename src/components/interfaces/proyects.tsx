@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 import { Button } from "../ui/button";
 import Image from "next/image";
 import { Badge } from "../ui/badge";
+import Link from "next/link";
+import { SearchCode } from "lucide-react";
 
 interface ScrollAnimationProps {
     control: any;
@@ -128,7 +130,7 @@ export default function AboutScroll() {
     useScrollAnimation({
         control: control4,
         startOffset: 801 + windowHeight * 3,
-        endOffset: 400 - windowHeight / 6 + windowHeight * 4,
+        endOffset: 800 - windowHeight / 4 + windowHeight * 4,
     });
 
     useEffect(() => {
@@ -154,7 +156,7 @@ export default function AboutScroll() {
     }, [control1, windowHeight]);
 
     return (
-        <section className="flex flex-col w-full max-w-6xl px-4">
+        <section id="Proyectos" className="flex flex-col w-full max-w-6xl px-4">
             <motion.div
                 className="sticky lg:flex justify-center items-center top-[50%] w-1/2 h-full z-20 hidden"
                 variants={variants}
@@ -172,7 +174,8 @@ export default function AboutScroll() {
                             width={420}
                             height={280}
                             alt="NextUI hero Image"
-                            src="/proyects/resto-app.webp"
+                            src="/images/proyects/resto-app.webp"
+                            className="rounded-3xl"
                         />
                     </figure>
                     <figure className="absolute -top-[80px] -left-[140px] w-40 h-40">
@@ -180,7 +183,7 @@ export default function AboutScroll() {
                             width={160}
                             height={160}
                             alt="NextUI hero Image"
-                            src="/proyects/grafico1.webp"
+                            src="/images/proyects/grafico1.webp"
                         />
                     </figure>
                     <figure className="absolute top-[240px] left-[300px] w-48 h-48">
@@ -188,7 +191,7 @@ export default function AboutScroll() {
                             width={192}
                             height={192}
                             alt="NextUI hero Image"
-                            src="/proyects/grafico2.webp"
+                            src="/images/proyects/grafico2.webp"
                         />
                     </figure>
                 </motion.div>
@@ -203,7 +206,8 @@ export default function AboutScroll() {
                             width={420}
                             height={280}
                             alt="NextUI hero Image"
-                            src="/proyects/pichirika.webp"
+                            src="/images/proyects/pichirika.webp"
+                            className="rounded-3xl"
                         />
                     </figure>
                     <figure className="absolute -top-[80px] left-[300px] w-48 h-48">
@@ -211,7 +215,7 @@ export default function AboutScroll() {
                             width={192}
                             height={192}
                             alt="NextUI hero Image"
-                            src="/proyects/thumb-up.webp"
+                            src="/images/proyects/thumb-up.webp"
                         />
                     </figure>
                     <figure className="absolute top-[200px] -left-[100px] w-40 h-40">
@@ -219,7 +223,7 @@ export default function AboutScroll() {
                             width={160}
                             height={160}
                             alt="NextUI hero Image"
-                            src="/proyects/camera.webp"
+                            src="/images/proyects/camera.webp"
                         />
                     </figure>
                 </motion.div>
@@ -234,7 +238,8 @@ export default function AboutScroll() {
                             width={420}
                             height={280}
                             alt="NextUI hero Image"
-                            src="/proyects/caribbean.webp"
+                            src="/images/proyects/caribbean.webp"
+                            className="rounded-3xl"
                         />
                     </figure>
                     <figure className="absolute top-[200px] left-[300px] w-48 h-48">
@@ -242,7 +247,7 @@ export default function AboutScroll() {
                             width={192}
                             height={192}
                             alt="NextUI hero Image"
-                            src="/proyects/next.webp"
+                            src="/images/proyects/next.webp"
                         />
                     </figure>
                     <figure className="absolute top-[190px] left-[120px] w-40 h-40">
@@ -250,7 +255,7 @@ export default function AboutScroll() {
                             width={160}
                             height={160}
                             alt="NextUI hero Image"
-                            src="/proyects/play.webp"
+                            src="/images/proyects/play.webp"
                         />
                     </figure>
                     <figure className="absolute top-[180px] -left-[90px] w-40 h-40">
@@ -258,7 +263,7 @@ export default function AboutScroll() {
                             width={160}
                             height={160}
                             alt="NextUI hero Image"
-                            src="/proyects/back.webp"
+                            src="/images/proyects/back.webp"
                         />
                     </figure>
                 </motion.div>
@@ -271,7 +276,7 @@ export default function AboutScroll() {
                             width={420}
                             height={280}
                             alt="NextUI hero Image"
-                            src="/proyects/resto-app.webp"
+                            src="/images/proyects/resto-app.webp"
                         />
                     </figure>
 
@@ -279,7 +284,7 @@ export default function AboutScroll() {
                         width={512}
                         height={512}
                         alt="NextUI hero Image"
-                        src="/proyects/back1.svg"
+                        src="/images/proyects/back1.svg"
                         className="hidden lg:block"
                     />
                 </div>
@@ -299,19 +304,19 @@ export default function AboutScroll() {
                         pedidos y empleados.
                     </p>
                     <div className="mt-4 flex gap-2">
-                        <Badge>
+                        <Badge variant={"outline"}>
                             <Nextjs />
                             Next.js
                         </Badge>
-                        <Badge>
+                        <Badge variant={"outline"}>
                             <MongoDB />
                             MongoDB
                         </Badge>
-                        <Badge>
+                        <Badge variant={"outline"}>
                             <TypeScript />
                             TypeScript
                         </Badge>
-                        <Badge>
+                        <Badge variant={"outline"}>
                             <Tailwind />
                             Tailwind CSS
                         </Badge>
@@ -338,19 +343,19 @@ export default function AboutScroll() {
                         brindarles amor y cuidados.
                     </p>
                     <div className="mt-4 flex gap-2">
-                        <Badge>
+                        <Badge variant={"outline"}>
                             <Nextjs />
                             Next.js
                         </Badge>
-                        <Badge>
+                        <Badge variant={"outline"}>
                             <MongoDB />
                             MongoDB
                         </Badge>
-                        <Badge>
+                        <Badge variant={"outline"}>
                             <TypeScript />
                             TypeScript
                         </Badge>
-                        <Badge>
+                        <Badge variant={"outline"}>
                             <Tailwind />
                             Tailwind CSS
                         </Badge>
@@ -370,14 +375,14 @@ export default function AboutScroll() {
                             width={420}
                             height={280}
                             alt="NextUI hero Image"
-                            src="/proyects/pichirika.webp"
+                            src="/images/proyects/pichirika.webp"
                         />
                     </figure>
                     <Image
                         width={512}
                         height={512}
                         alt="NextUI hero Image"
-                        src="/proyects/back2.svg"
+                        src="/images/proyects/back2.svg"
                         className="hidden lg:block"
                     />
                 </div>
@@ -389,14 +394,14 @@ export default function AboutScroll() {
                             width={420}
                             height={280}
                             alt="NextUI hero Image"
-                            src="/proyects/caribbean.webp"
+                            src="/images/proyects/caribbean.webp"
                         />
                     </figure>
                     <Image
                         width={512}
                         height={512}
                         alt="NextUI hero Image"
-                        src="/proyects/back3.svg"
+                        src="/images/proyects/back3.svg"
                         className="hidden lg:block"
                     />
                 </div>
@@ -411,19 +416,19 @@ export default function AboutScroll() {
                         productos, categorías y pedidos.
                     </p>
                     <div className="mt-4 flex gap-2">
-                        <Badge>
+                        <Badge variant={"outline"}>
                             <Nextjs />
                             Next.js
                         </Badge>
-                        <Badge>
+                        <Badge variant={"outline"}>
                             <MongoDB />
                             MongoDB
                         </Badge>
-                        <Badge>
+                        <Badge variant={"outline"}>
                             <TypeScript />
                             TypeScript
                         </Badge>
-                        <Badge>
+                        <Badge variant={"outline"}>
                             <Tailwind />
                             Tailwind CSS
                         </Badge>
@@ -435,6 +440,12 @@ export default function AboutScroll() {
                     </Button>
                 </div>
             </div>
+            <Button asChild className="mt-4 w-fit mx-auto" color="secondary">
+                <Link href="https://www.caribbeanind.com/">
+                    Ver más proyectos
+                    <SearchCode className="ml-2" />
+                </Link>
+            </Button>
         </section>
     );
 }
