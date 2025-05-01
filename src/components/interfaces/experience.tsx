@@ -26,7 +26,7 @@ const experiencia = [
 ];
 export default function Experience() {
     return (
-        <section className="flex gap-3 mt-16 px-2">
+        <section id="Experiencia" className="flex gap-3 mt-16 px-2 py-24">
             <ol className="relative border-s dark:border-blue-200 border-blue-950 w-full max-w-5xl">
                 {experiencia.map((exp, index) => (
                     <li key={index} className="mb-10 ms-4">
