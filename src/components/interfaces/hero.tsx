@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge";
 export default function Hero() {
     return (
         <AuroraBackground>
-            <section className="py-32">
+            <section id="Inicio" className="py-32">
                 <div className="relative container flex flex-col items-center !px-0">
                     <DottedDiv>
                         <div className="grid lg:grid-cols-2">
@@ -17,19 +17,19 @@ export default function Hero() {
                                     variant="outline"
                                     className="flex w-fit cursor-pointer items-center gap-4 rounded-full px-6 py-2 transition-all ease-in-out hover:gap-6"
                                 >
-                                    <span className="text-sm font-medium tracking-tight text-zinc-300">
+                                    <span className="text-sm font-medium tracking-tight text-zinc-700 dark:text-zinc-300">
                                         Ver Proyectos
                                     </span>
                                     <ChevronRight className="!size-4" />
                                 </Badge>
-                                <h1 className="text-5xl text-white font-semibold tracking-tighter md:text-6xl drop-shadow-[0_0px_7px_rgba(255,255,255,0.55)]">
+                                <h1 className="text-5xl font-semibold tracking-tighter md:text-6xl bg-gradient-to-br from-violet-300 via-violet-600 to-violet-200 dark:from-zinc-100 dark:via-zinc-300 dark:to-zinc-50 bg-clip-text text-transparent drop-shadow-[0_0px_7px_rgba(255,255,255,0.55)]">
                                     Hola soy
                                     <br />
                                     Juan Morales
                                     <br />
                                     Desarrollador Frontend
                                 </h1>
-                                <p className="tracking-tight text-balance text-zinc-300 md:text-xl">
+                                <p className="tracking-tight text-balance text-zinc-700 dark:text-zinc-300 md:text-xl">
                                     Tengo mas de 3 años de experiencia. Soy
                                     desarrollador Front-End y vivo en Argentina
                                     - San Juan. Especializado en desarrollo de
@@ -51,23 +51,23 @@ export default function Hero() {
                             <DottedDiv className="group size-full place-self-end p-4 lg:w-4/6">
                                 <div className="relative h-full w-full bg-muted-2/50 p-4 transition-all ease-in-out group-hover:bg-muted-2">
                                     {/* Bg Image div */}
-                                    <div className="relative h-full w-full overflow-hidden rounded-3xl">
+                                    <div className="relative h-62 w-full overflow-hidden rounded-3xl lg:h-full">
                                         <img
-                                            src="https://shadcnblocks.com/images/block/photos/simone-hutsch-5oYbG-sEImY-unsplash.jpg"
-                                            alt="aiImage"
+                                            src="/Profile.jpg"
+                                            alt="Imagen de perfil de Juan Morales"
                                             className="h-full w-full object-cover"
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                                     </div>
 
                                     <div className="absolute top-4 -ml-4 flex h-full w-full flex-col items-center justify-between p-10">
-                                        <p className="flex w-full items-center text-xl tracking-tighter text-background">
-                                            2025{" "}
+                                        <p className="flex w-full items-center text-xl tracking-tighter text-zinc-300">
+                                            Juan Morales
                                             <span className="mx-2 h-2.5 w-[1px] bg-white" />
-                                            March
+                                            Frontend Developer
                                         </p>
-                                        <div className="flex flex-col items-center justify-center">
-                                            <h2 className="text-center text-6xl font-semibold tracking-tight text-background">
+                                        {/* <div className="flex flex-col items-center justify-center">
+                                            <h2 className="text-center text-6xl font-semibold tracking-tight text-white drop-shadow-[0_0px_7px_rgba(255,255,255,0.55)]">
                                                 New <br />
                                                 Collection
                                             </h2>
@@ -76,17 +76,17 @@ export default function Hero() {
                                                 Discover our latest release of
                                                 beautifully crafted components.
                                             </p>
-                                        </div>
+                                        </div> */}
                                         <a
                                             href="#"
-                                            className="group mb-6 flex cursor-pointer flex-col items-center justify-center text-background"
+                                            className="group mb-6 flex cursor-pointer flex-col items-center justify-center text-zinc-300"
                                         >
                                             <ChevronUp
                                                 size={30}
                                                 className="transition-all ease-in-out group-hover:-translate-y-2"
                                             />
-                                            <p className="text-xl tracking-tight text-background">
-                                                See All
+                                            <p className="text-xl tracking-tight text-zinc-300">
+                                                LinkedIn
                                             </p>
                                         </a>
                                     </div>
@@ -107,14 +107,14 @@ const DottedDiv = ({
     className?: string;
 }) => (
     <div className={cn("relative", className)}>
-        <div className="absolute top-4 -left-25 h-[1px] w-[115%] bg-zinc-700/35" />
-        <div className="absolute bottom-4 -left-25 h-[1px] w-[115%] bg-zinc-700/35" />
-        <div className="absolute -top-25 left-4 h-[130%] w-[1px] bg-zinc-700/35" />
-        <div className="absolute -top-25 right-4 h-[130%] w-[1px] bg-zinc-700/35" />
-        <div className="absolute top-[12.5px] left-[12.5px] z-10 size-2 rounded-full bg-foreground drop-shadow-[0_0px_7px_rgba(255,255,255,0.55)]" />
-        <div className="absolute top-[12.5px] right-[12.5px] z-10 size-2 rounded-full bg-foreground drop-shadow-[0_0px_7px_rgba(255,255,255,0.55)]" />
-        <div className="absolute bottom-[12.5px] left-[12.5px] z-10 size-2 rounded-full bg-foreground drop-shadow-[0_0px_7px_rgba(255,255,255,0.55)]" />
-        <div className="absolute right-[12.5px] bottom-[12.5px] z-10 size-2 rounded-full bg-foreground drop-shadow-[0_0px_7px_rgba(255,255,255,0.55)]" />
+        <div className="absolute top-4 -left-0 h-[1px] w-[100%] bg-zinc-700/35" />
+        <div className="absolute bottom-4 -left-0 h-[1px] w-[100%] bg-zinc-700/35" />
+        <div className="absolute -top-0 left-4 h-[100%] w-[1px] bg-zinc-700/35" />
+        <div className="absolute -top-0 right-4 h-[100%] w-[1px] bg-zinc-700/35" />
+        <div className="absolute top-[10.5px] left-[10.5px] z-10 size-3 rounded-full bg-foreground drop-shadow-[0_0px_7px_rgba(255,255,255,0.55)]" />
+        <div className="absolute top-[10.5px] right-[10.5px] z-10 size-3 rounded-full bg-foreground drop-shadow-[0_0px_7px_rgba(255,255,255,0.55)]" />
+        <div className="absolute bottom-[10.5px] left-[10.5px] z-10 size-3 rounded-full bg-foreground drop-shadow-[0_0px_7px_rgba(255,255,255,0.55)]" />
+        <div className="absolute right-[10.5px] bottom-[10.5px] z-10 size-3 rounded-full bg-foreground drop-shadow-[0_0px_7px_rgba(255,255,255,0.55)]" />
         {children}
     </div>
 );
