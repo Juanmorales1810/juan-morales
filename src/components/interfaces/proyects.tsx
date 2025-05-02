@@ -441,7 +441,7 @@ export default function AboutScroll() {
                 </div>
             </div>
             <Button asChild className="mt-4 w-fit mx-auto" color="secondary">
-                <Link href="https://www.caribbeanind.com/">
+                <Link href="/proyectos">
                     Ver más proyectos
                     <SearchCode className="ml-2" />
                 </Link>
