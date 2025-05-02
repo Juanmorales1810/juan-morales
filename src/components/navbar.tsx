@@ -15,14 +15,14 @@ import { ModeToggle } from "./toggle-mode";
 
 export function Header() {
     const navItems = [
-        { name: "Inicio", link: "#Inicio" },
+        { name: "Inicio", link: "/#Inicio" },
         {
             name: "Experiencia",
-            link: "#Experiencia",
+            link: "/#Experiencia",
         },
-        { name: "Bio", link: "#Bio" },
-        { name: "Proyectos", link: "#Proyectos" },
-        { name: "Contacto", link: "#Contacto" },
+        { name: "Bio", link: "/#Bio" },
+        { name: "Proyectos", link: "/#Proyectos" },
+        { name: "Contacto", link: "/#Contacto" },
     ];
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
