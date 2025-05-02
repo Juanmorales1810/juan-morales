@@ -1,13 +1,13 @@
 "use client";
 
 import { MongoDB, Nextjs, Tailwind, TypeScript } from "../icons";
-import { motion, useAnimation, Variants } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Button } from "../ui/button";
 import Image from "next/image";
 import { Badge } from "../ui/badge";
 import Link from "next/link";
 import { SearchCode } from "lucide-react";
+import { motion, useAnimation, Variants } from "motion/react";
 
 interface ScrollAnimationProps {
     control: any;
