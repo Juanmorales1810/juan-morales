@@ -14,11 +14,7 @@ interface BlogPost {
     linkDemo?: string;
 }
 
-interface BlogSectionProps {
-    posts: BlogPost[];
-}
-
-export default function Page({ posts = defaultPosts }: BlogSectionProps) {
+export default function Page() {
     return (
         <section className="py-32">
             <div className="container mx-auto">
@@ -28,7 +24,7 @@ export default function Page({ posts = defaultPosts }: BlogSectionProps) {
                     Recientes
                 </h1>
                 <div className="flex flex-col space-y-2.5 md:space-y-0 md:gap-8 lg:gap-16">
-                    {posts.map((post) => (
+                    {defaultPosts.map((post) => (
                         <div
                             key={post.id}
                             className="flex flex-col items-center gap-16 md:flex-row"
