@@ -17,17 +17,17 @@ interface BlogPost {
 export default function Page() {
     return (
         <section className="py-32">
-            <div className="container mx-auto">
+            <div className="container mx-auto px-2">
                 <h1 className="mb-12 max-w-lg font-sans text-5xl font-extrabold tracking-tight text-foreground drop-shadow-[0_0px_7px_rgba(255,255,255,0.55)] md:text-7xl">
                     Proyectos
                     <br />
                     Recientes
                 </h1>
-                <div className="flex flex-col space-y-2.5 md:space-y-0 md:gap-8 lg:gap-16">
+                <div className="flex flex-col space-y-2.5 gap-12 md:space-y-0 md:gap-8 lg:gap-16">
                     {defaultPosts.map((post) => (
                         <div
                             key={post.id}
-                            className="flex flex-col items-center gap-16 md:flex-row"
+                            className="flex flex-col items-center gap-4 md:gap-16 md:flex-row"
                         >
                             <div className="flex h-80 w-full items-center justify-center overflow-hidden rounded-3xl bg-muted md:w-140">
                                 <img
@@ -38,7 +38,7 @@ export default function Page() {
                             </div>
                             <Card className="flex flex-col gap-6 border-none shadow-none px-2.5 bg-accent md:w-1/2 lg:w-2/3">
                                 <CardContent className="p-0">
-                                    <div className="mb-5 flex h-90 items-start border-b py-10 md:mb-0 lg:gap-32 md:border-t">
+                                    <div className="mb-5 flex flex-col h-fit  items-start border-b py-10 md:flex-row md:mb-0 lg:gap-32 md:border-t">
                                         <div className="flex h-full w-full flex-col items-start justify-between pr-8">
                                             <h2 className="text-2xl font-bold tracking-tight text-foreground md:text-3xl">
                                                 {post.title}
