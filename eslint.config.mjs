@@ -20,6 +20,7 @@ const eslintConfig = [
             "@typescript-eslint/no-unused-vars": "off",
             "no-unused-vars": "off",
             "react/react-in-jsx-scope": "off",
+            "@next/next/no-html-link-for-pages": "off",
         },
     },
 ];
