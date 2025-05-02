@@ -3,6 +3,7 @@ import { AuroraBackground } from "../aurora-background";
 import { ArrowUpRight, ChevronRight, ChevronUp } from "lucide-react";
 import { Button } from "../ui/button";
 import { Badge } from "@/components/ui/badge";
+import Link from "next/link";
 
 export default function Hero() {
     return (
@@ -13,15 +14,17 @@ export default function Hero() {
                         <div className="grid lg:grid-cols-2">
                             {/* Left Content */}
                             <div className="flex w-full flex-col gap-8 px-10 py-20 md:px-14">
-                                <Badge
-                                    variant="outline"
-                                    className="flex w-fit cursor-pointer items-center gap-4 rounded-full px-6 py-2 transition-all ease-in-out hover:gap-6"
-                                >
-                                    <span className="text-sm font-medium tracking-tight text-zinc-700 dark:text-zinc-300">
-                                        Ver Proyectos
-                                    </span>
-                                    <ChevronRight className="!size-4" />
-                                </Badge>
+                                <Link href="/proyectos" className="w-fit">
+                                    <Badge
+                                        variant="outline"
+                                        className="flex w-fit cursor-pointer items-center gap-4 rounded-full px-6 py-2 transition-all ease-in-out hover:gap-6"
+                                    >
+                                        <span className="text-sm font-medium tracking-tight text-zinc-700 dark:text-zinc-300">
+                                            Ver Proyectos
+                                        </span>
+                                        <ChevronRight className="!size-4" />
+                                    </Badge>
+                                </Link>
                                 <h1 className="text-5xl font-semibold tracking-tighter md:text-6xl bg-gradient-to-br from-violet-300 via-violet-600 to-violet-200 dark:from-zinc-100 dark:via-zinc-300 dark:to-zinc-50 bg-clip-text text-transparent drop-shadow-[0_0px_7px_rgba(255,255,255,0.55)]">
                                     Hola soy
                                     <br />
@@ -36,14 +39,21 @@ export default function Hero() {
                                     web apps
                                 </p>
                                 <div className="flex w-full gap-2">
-                                    <Button className="text-md h-12 w-fit rounded-full bg-primary px-10 text-primary-foreground">
-                                        Contacto
+                                    <Button
+                                        asChild
+                                        className="text-md h-12 w-fit rounded-full bg-primary px-10 text-primary-foreground"
+                                    >
+                                        <Link href="#Contacto">Contacto</Link>
                                     </Button>
                                     <Button
+                                        asChild
                                         variant="secondary"
                                         className="text-md h-12 w-12 rounded-full transition-all ease-in-out hover:rotate-45"
                                     >
-                                        <ArrowUpRight />
+                                        <Link href="#Contacto">
+                                            <span className="sr-only">Ver</span>
+                                            <ArrowUpRight />
+                                        </Link>
                                     </Button>
                                 </div>
                             </div>
@@ -78,7 +88,9 @@ export default function Hero() {
                                             </p>
                                         </div> */}
                                         <a
-                                            href="#"
+                                            href="https://www.linkedin.com/in/juan-exequiel-morales/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             className="group mb-6 flex cursor-pointer flex-col items-center justify-center text-zinc-300"
                                         >
                                             <ChevronUp
