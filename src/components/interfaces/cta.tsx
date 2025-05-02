@@ -18,9 +18,18 @@ export default function Cta() {
                             una idea pequeña o grande, siempre estoy dispuesto a
                             ayudarte.
                         </p>
-                        <Button className="my-3 " color="secondary">
-                            <WhatsAppIcon className="fill-white" />
-                            Hablame al WhatsApp
+                        <Button asChild className="my-3 " color="secondary">
+                            <a
+                                href="https://wa.me/542646216944"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <span className="text-sm font-medium tracking-tight text-zinc-700 dark:text-zinc-300">
+                                    Hablame al WhatsApp
+                                </span>
+                                <span className="sr-only">WhatsApp</span>
+                                <WhatsAppIcon className="fill-white" />
+                            </a>
                         </Button>
                     </div>
                     <div className="absolute bottom-0 right-1/2 mr-6 h-min w-[110%] max-w-md translate-x-1/2 md:-right-36 md:mr-0 md:w-3/4 md:max-w-xl md:translate-x-0 lg:mt-auto xl:relative xl:right-0 xl:h-full xl:w-full xl:max-w-full">
