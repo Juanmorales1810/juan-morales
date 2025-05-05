@@ -3,7 +3,7 @@ const experiencia = [
         fecha: "Junio 2024 - Actualidad",
         puesto: "Frontend Developer en San Juan Gobierno",
         descripcion:
-            "Desarrollo de aplicaciones web y móviles, utilizando tecnologías modernas como React, Next.js y React Native. Creación de interfaces de usuario interactivas y dinámicas, implementando estrategias de optimización de rendimiento para garantizar una experiencia de usuario fluida. Colaboración con diseñadores y desarrolladores de backend para garantizar la coherencia del diseño y la funcionalidad de la aplicación. Participación en reuniones de planificación y revisión de código para garantizar la calidad y la eficiencia del código fuente.",
+            "Desarrollo de aplicaciones web y móviles, utilizando tecnologías modernas como React, Next.js y React Native. Creación de interfaces de usuario interactivas y dinámicas, implementando estrategias de optimización de rendimiento para garantizar una experiencia de usuario fluida. Colaboración con diseñadores y desarrolladores de backend para garantizar la coherencia del diseño y la funcionalidad de la aplicación. Participación en reuniones de planificación y revisión de código para garantizar la calidad y la eficiencia del código fuente. También implementé que en mi departamento se haga el uso de GitHub como herramienta de control de versiones, lo que permitió una mejor colaboración y seguimiento de cambios en el código.",
     },
     {
         fecha: "Octubre 2022 - Actualidad",
