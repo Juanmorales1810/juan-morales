@@ -211,7 +211,7 @@ const defaultPosts: BlogPost[] = [
     },
     {
         id: "11",
-        title: "Fishy Air",
+        title: "Jireh English Academy",
         date: "23 de Diciembre 2024",
         description:
             "La página Jireh English Academy se enfoca en ofrecer cursos de inglés personalizados en La Serena, especialmente dirigidos a minería, negocios y viajes. El objetivo es mejorar la fluidez de los estudiantes con clases impartidas por un profesor de inglés nativo.",
