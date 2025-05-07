@@ -1,6 +1,15 @@
 export default function Bio() {
     return (
         <section id="Bio" className="py-24 px-4">
+            <div className="flex flex-col items-center gap-4 text-center py-6">
+                <h2 className="text-3xl font-semibold tracking-tight text-zinc-700 dark:text-zinc-300 md:text-4xl">
+                    Sobre mí
+                </h2>
+                <p className="text-md text-zinc-500 dark:text-zinc-400 max-w-2xl">
+                    Un poco de mi historia y como llegue a ser desarrollador
+                    Frontend.
+                </p>
+            </div>
             <div className="flex flex-col justify-center items-center group gap-4 w-full max-w-5xl md:gap-10 md:flex-row pb-6">
                 <div className="text-md text-black font-medium dark:text-white md:w-1/2">
                     <p>
