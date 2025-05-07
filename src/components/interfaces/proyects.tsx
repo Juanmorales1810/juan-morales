@@ -292,7 +292,7 @@ export default function AboutScroll() {
                     <h3 className="py-2 text-6xl font-bold bg-gradient-to-br from-violet-300 via-violet-600 to-violet-200 dark:from-zinc-100 dark:via-zinc-300 dark:to-zinc-50 bg-clip-text text-transparent dark:drop-shadow-[0_0px_4px_rgba(255,255,255,0.55)]">
                         Resto-App
                     </h3>
-                    <p className="mt-4 text-lg text-start font-normal text-pretty lg:text-xl text-zinc-900 dark:text-white">
+                    <p className="mt-4 text-md text-start font-normal text-pretty lg:text-xl text-zinc-900 dark:text-white">
                         Resto-App es una web app para los restaurantes que
                         cuenta con una landing page y con un gestor de pedidos.
                         La landing page es una web estática que muestra
@@ -303,7 +303,7 @@ export default function AboutScroll() {
                         administración para gestionar los productos, categorías,
                         pedidos y empleados.
                     </p>
-                    <div className="mt-4 flex gap-2">
+                    <div className="mt-4 flex flex-wrap gap-2">
                         <Badge variant={"outline"}>
                             <Nextjs />
                             Next.js
@@ -336,13 +336,13 @@ export default function AboutScroll() {
                     <h3 className="py-2 text-6xl font-bold bg-gradient-to-br from-violet-300 via-violet-600 to-violet-200 dark:from-zinc-100 dark:via-zinc-300 dark:to-zinc-50 bg-clip-text text-transparent dark:drop-shadow-[0_0px_4px_rgba(255,255,255,0.55)]">
                         PichiriKa
                     </h3>
-                    <p className="mt-4 text-lg font-normal text-pretty lg:text-xl text-zinc-900 dark:text-white">
+                    <p className="mt-4 text-md font-normal text-pretty lg:text-xl text-zinc-900 dark:text-white">
                         Es un portal web para la adopción y cuidado de animales
                         es una plataforma virtual que facilita la conexión entre
                         mascotas necesitadas de hogar y personas interesadas en
                         brindarles amor y cuidados.
                     </p>
-                    <div className="mt-4 flex gap-2">
+                    <div className="mt-4 flex flex-wrap gap-2">
                         <Badge variant={"outline"}>
                             <Nextjs />
                             Next.js
@@ -409,13 +409,13 @@ export default function AboutScroll() {
                     <h3 className="py-2 text-6xl font-bold bg-gradient-to-br from-violet-300 via-violet-600 to-violet-200 dark:from-zinc-100 dark:via-zinc-300 dark:to-zinc-50 bg-clip-text text-transparent dark:drop-shadow-[0_0px_4px_rgba(255,255,255,0.55)]">
                         Caribbean Ind
                     </h3>
-                    <p className="mt-4 text-lg font-normal text-pretty lg:text-xl text-zinc-900 dark:text-white">
+                    <p className="mt-4 text-md font-normal text-pretty lg:text-xl text-zinc-900 dark:text-white">
                         Es una web para la venta de artículos de indumentaria,
                         calzado y accesorios. La web cuenta con un carrito de
                         compras, un panel de administración para gestionar los
                         productos, categorías y pedidos.
                     </p>
-                    <div className="mt-4 flex gap-2">
+                    <div className="mt-4 flex flex-wrap gap-2">
                         <Badge variant={"outline"}>
                             <Nextjs />
                             Next.js
