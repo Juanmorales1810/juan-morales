@@ -4,11 +4,13 @@ import { ArrowUpRight, ChevronRight, ChevronUp } from "lucide-react";
 import { Button } from "../ui/button";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
+import Image from "next/image";
+import Skills from "../skills";
 
 export default function Hero() {
     return (
         <AuroraBackground>
-            <section id="Inicio" className="py-32">
+            <section id="Inicio" className="pt-32 md:py-32">
                 <div className="relative container flex flex-col items-center !px-0">
                     <DottedDiv>
                         <div className="grid lg:grid-cols-2">
@@ -56,14 +58,17 @@ export default function Hero() {
                                         </Link>
                                     </Button>
                                 </div>
+                                <Skills />
                             </div>
                             {/* Right Content */}
                             <DottedDiv className="group size-full place-self-end p-4 lg:w-4/6">
                                 <div className="relative h-full w-full bg-muted-2/50 p-4 transition-all ease-in-out group-hover:bg-muted-2">
                                     {/* Bg Image div */}
                                     <div className="relative h-62 w-full overflow-hidden rounded-3xl lg:h-full">
-                                        <img
+                                        <Image
                                             src="/Profile.jpg"
+                                            height={718}
+                                            width={480}
                                             alt="Imagen de perfil de Juan Morales"
                                             className="h-full w-full object-cover"
                                         />
