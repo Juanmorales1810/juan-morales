@@ -1,4 +1,11 @@
-import { LayoutList, Rocket } from "lucide-react";
+import {
+    Building2,
+    Earth,
+    LayoutPanelTop,
+    MousePointerClick,
+    Rocket,
+} from "lucide-react";
+import Image from "next/image";
 import React from "react";
 
 const experiencia = [
@@ -7,24 +14,33 @@ const experiencia = [
         puesto: "Frontend Developer en San Juan Gobierno",
         descripcion:
             "Desarrollo de aplicaciones web y móviles, utilizando tecnologías modernas como React, Next.js y React Native. Creación de interfaces de usuario interactivas y dinámicas, implementando estrategias de optimización de rendimiento para garantizar una experiencia de usuario fluida. Colaboración con diseñadores y desarrolladores de backend para garantizar la coherencia del diseño y la funcionalidad de la aplicación. Participación en reuniones de planificación y revisión de código para garantizar la calidad y la eficiencia del código fuente. También implementé que en mi departamento se haga el uso de GitHub como herramienta de control de versiones, lo que permitió una mejor colaboración y seguimiento de cambios en el código.",
+
+        imagen: "/images/experiencia/san-juan-gob.png",
+        icon: <Building2 className="size-4 shrink-0" />,
     },
     {
         fecha: "Octubre 2022 - Actualidad",
         puesto: "Freelance Web Developer",
         descripcion:
             "Mi experiencia se extiende al desarrollo de aplicaciones web, donde utilizó frameworks modernos como Next.js y Astro.js para crear interfaces interactivas y dinámicas. Además, me especializo en la optimización del rendimiento, implementando estrategias como la carga diferida de recursos y la mejora del tiempo de carga para garantizar una experiencia de usuario fluida. No solo creo sitios web, sino que también ofrezco servicios de mantenimiento continuo, asegurando que las plataformas permanezcan actualizadas, seguras y eficientes.",
+        imagen: "/images/experiencia/trenza.png",
+        icon: <Earth className="size-4 shrink-0" />,
     },
     {
         fecha: "Septiembre 2021 - Octubre 2022",
         puesto: "Diseñador Gráfico",
         descripcion:
             "Elaboración de materiales institucionales, así como imágenes para la divulgación de nuevas empresas, aniversarios y avisos importantes. Revisión de documentos con cliente, definición y priorización del backlog junto con el equipo.",
+        imagen: "/images/experiencia/diseño-grafico.png",
+        icon: <MousePointerClick className="size-4 shrink-0" />,
     },
     {
         fecha: "Marzo 2019 - Septiembre 2021",
         puesto: "WordPress Developer",
         descripcion:
             "Hacia trabajos a empresas locales de manera autónoma usando Elementor, WooCommerce, HTML, CSS, JavaScript.",
+        imagen: "/images/experiencia/wordpress.png",
+        icon: <LayoutPanelTop className="size-4 shrink-0" />,
     },
 ];
 
@@ -57,7 +73,7 @@ export default function Experiencia() {
                     </p>
                 </div>
             </div>
-            <div className="container mx-auto overflow-hidden border-x pb-40 lg:pt-20 [&>*:last-child]:pb-20 [&>div>div:first-child]:!pt-20">
+            <div className="container mx-auto overflow-hidden border-x pb-0 lg:pt-20 [&>*:last-child]:pb-20 [&>div>div:first-child]:!pt-20">
                 {experiencia.map((exp, index) => (
                     <div className="relative flex" key={index}>
                         <div
@@ -80,10 +96,10 @@ export default function Experiencia() {
                                     {exp.descripcion}
                                 </p>
                             </div>
-                            <div className="z-[-1] size-fit -translate-y-5 bg-background rounded-full p-4 max-lg:-translate-x-4">
+                            <div className="z-10 size-fit -translate-y-5 bg-background rounded-full p-4  max-lg:-translate-x-4">
                                 <div className="rounded-[10px] border bg-card p-[5px] shadow-md">
-                                    <div className="size-fit rounded-md border bg-muted p-1">
-                                        <LayoutList className="size-4 shrink-0" />
+                                    <div className="size-fit rounded-md border bg-muted p-1 drop-shadow-[0_0_8px_rgba(255,255,255,0.95)]">
+                                        {exp.icon}
                                     </div>
                                 </div>
                             </div>
@@ -120,12 +136,14 @@ export default function Experiencia() {
                                                         "url(\"data:image/svg+xml,%3Csvg width='7' height='7' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23cccccc' fill-opacity='0.15' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E\")",
                                                 }}
                                             ></div>
-                                            <img
-                                                src="/images/block/placeholder-1.svg"
+                                            <Image
+                                                src={exp.imagen}
+                                                loading="lazy"
                                                 width="400"
                                                 height="500"
-                                                alt="Get Organized"
-                                                className="object-contain dark:invert"
+                                                alt={exp.puesto}
+                                                title={exp.puesto}
+                                                className="object-contain"
                                             />
                                             <div
                                                 className="h-full border-2 border-dashed w-6 lg:w-10"
