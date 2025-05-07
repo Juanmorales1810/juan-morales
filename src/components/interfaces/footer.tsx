@@ -1,30 +1,33 @@
 import { Facebook, Instagram } from "lucide-react";
 import React from "react";
 import { GithubIcon, LinkedIn } from "../icons";
+import Link from "next/link";
 
 export default function Footer() {
     return (
-        <section className="relative z-10 py-32">
-            <div className="container mx-auto">
+        <section className="relative z-10 py-12">
+            <div className="container mx-auto px-4">
                 <footer>
                     <div className="grid grid-cols-4 justify-between gap-10 lg:grid-cols-6 lg:text-left">
                         <div className="col-span-4 flex w-full flex-col gap-6 lg:col-span-2">
                             <div className="flex items-center gap-2 lg:justify-start">
-                                <a href="https://shadcnblocks.com">
+                                <Link href="/">
                                     <img
-                                        src="/images/block/logos/shadcnblockscom-icon.svg"
+                                        src="/favicon.svg"
                                         alt="logo"
-                                        title="Shadcnblocks.com"
+                                        title="DevLogo"
                                         className="h-8"
                                     />
-                                </a>
+                                </Link>
                                 <h2 className="text-xl font-semibold">
-                                    Shadcnblocks.com
+                                    Juan Morales
                                 </h2>
                             </div>
-                            <p className="text-muted-foreground">
-                                A collection of 100+ responsive HTML templates
-                                for your startup business or side project.
+                            <p className="text-muted-foreground text-balance">
+                                Desarrollador Frontend con más de 3 años de
+                                experiencia en el desarrollo de aplicaciones web
+                                y móviles. Me apasiona crear experiencias
+                                digitales únicas y funcionales.
                             </p>
                             <ul className="flex items-center space-x-6">
                                 <li className="font-medium duration-200 hover:scale-110 hover:text-muted-foreground">
@@ -49,7 +52,7 @@ export default function Footer() {
                                 </li>
                             </ul>
                         </div>
-                        <div className="col-span-2 md:col-span-1">
+                        {/* <div className="col-span-2 md:col-span-1">
                             <h3 className="mb-5 font-medium">Product</h3>
                             <ul className="space-y-4 text-sm text-muted-foreground">
                                 <li className="font-medium hover:text-primary">
@@ -120,23 +123,25 @@ export default function Footer() {
                                     Privacy Policy
                                 </a>
                             </p>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="mt-20 flex flex-col justify-between gap-4 border-t pt-8 text-sm font-medium text-muted-foreground lg:flex-row lg:items-center lg:text-left">
                         <p>
                             <span className="mr-1 font-bold text-primary">
-                                Shadcnblocks.com
+                                Juan Morales
                             </span>
                             © All rights reserved.
                         </p>
                         <p>
-                            Made with ❤️ by{" "}
-                            <a
-                                href="https://x.com/ausrobdev"
+                            Hecho con ❤️ por{" "}
+                            <Link
+                                href="https://github.com/Juanmorales1810"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="text-primary"
                             >
-                                @ausrobdev
-                            </a>
+                                Juan Morales
+                            </Link>
                         </p>
                     </div>
                 </footer>
