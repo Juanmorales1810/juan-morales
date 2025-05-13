@@ -71,6 +71,7 @@ export default function Hero() {
                                             width={480}
                                             alt="Imagen de perfil de Juan Morales"
                                             className="h-full w-full object-cover"
+                                            quality={90}
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                                     </div>
