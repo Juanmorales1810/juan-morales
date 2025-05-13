@@ -5,7 +5,9 @@ import Image from "next/image";
 
 export default function Cta() {
     return (
-        <section className="py-32">
+        <section className="relative py-32">
+            <div className="absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(173,109,244,0.5)] opacity-50 blur-[80px]"></div>
+
             <div className="max-w-full overflow-hidden pt-10 md:pt-16 lg:pt-20">
                 <div className="container px-4 relative flex flex-col group md:px-0 md:flex-row md:space-x-12">
                     <div className="mb-[18rem] md:mb-28 md:w-2/3 lg:shrink-0 xl:mb-20 xl:w-1/2">
@@ -24,7 +26,7 @@ export default function Cta() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <span className="text-sm font-medium tracking-tight text-zinc-700 dark:text-zinc-300">
+                                <span className="text-sm font-medium tracking-tight  dark:text-zinc-300">
                                     Hablame al WhatsApp
                                 </span>
                                 <span className="sr-only">WhatsApp</span>
