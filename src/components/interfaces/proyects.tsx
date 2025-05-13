@@ -119,31 +119,31 @@ export default function AboutScroll() {
     // Usa los hooks fuera de condicionales
     useScrollAnimation({
         control: control2,
-        startOffset: 800 + windowHeight,
-        endOffset: 800 + windowHeight * 2,
+        startOffset: 4000 + windowHeight,
+        endOffset: 4000 + windowHeight * 2,
     });
     useScrollAnimation({
         control: control3,
-        startOffset: 801 + windowHeight * 2,
-        endOffset: 800 + windowHeight * 3,
+        startOffset: 3801 + windowHeight * 2,
+        endOffset: 3800 + windowHeight * 3,
     });
     useScrollAnimation({
         control: control4,
-        startOffset: 801 + windowHeight * 3,
-        endOffset: 800 - windowHeight / 4 + windowHeight * 4,
+        startOffset: 3801 + windowHeight * 3,
+        endOffset: 3800 - windowHeight / 4 + windowHeight * 4,
     });
 
     useEffect(() => {
         const scrollHandler = () => {
             const scrollY = window.scrollY;
 
-            if (scrollY <= 800 + windowHeight * 2) {
+            if (scrollY <= 3800 + windowHeight * 2) {
                 control1.start("right");
             }
-            if (scrollY > 801 + windowHeight * 2) {
+            if (scrollY > 3801 + windowHeight * 2) {
                 control1.start("left");
             }
-            if (scrollY > 801 + windowHeight * 3) {
+            if (scrollY > 3801 + windowHeight * 3) {
                 control1.start("right");
             }
         };
