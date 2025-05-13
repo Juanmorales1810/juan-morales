@@ -171,14 +171,14 @@ export default function Contact() {
                                     <Button
                                         asChild
                                         variant="outline"
-                                        className="w-full sm:w-auto group"
+                                        className="w-full sm:w-auto text-foreground group"
                                     >
                                         <Link
                                             href="https://wa.me/542646216944"
                                             target="_blank"
                                         >
                                             Háblame al WhatsApp
-                                            <WhatsAppIcon className="ml-2" />
+                                            <WhatsAppIcon className="ml-2 fill-current" />
                                         </Link>
                                     </Button>
                                 </div>
