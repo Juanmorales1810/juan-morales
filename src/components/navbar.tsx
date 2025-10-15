@@ -20,7 +20,7 @@ export function Header() {
             name: "Experiencia",
             link: "/#Experiencia",
         },
-        { name: "Bio", link: "/#Bio" },
+        { name: "Sobre mí", link: "/#sobre-mi" },
         { name: "Proyectos", link: "/#Proyectos" },
         { name: "Contacto", link: "/#Contacto" },
     ];

@@ -3,7 +3,6 @@ import Proyects from "@/components/interfaces/proyects";
 import Contact from "@/components/interfaces/contact";
 import Hero from "@/components/interfaces/hero";
 import Cta from "@/components/interfaces/cta";
-import Bio from "@/components/interfaces/bio";
 import SobreMi from "@/components/interfaces/sobre-mi";
 
 export default function Home() {

@@ -5,7 +5,7 @@ import { BookUser, SquarePen, Code, Laptop } from "lucide-react";
 
 export default function SobreMi() {
     return (
-        <section className="py-12 w-full" id="bio">
+        <section className="py-12 w-full" id="sobre-mi">
             <div className="border-y">
                 <div className="container mx-auto flex flex-col gap-6 border-x px-4 py-4 max-lg:border-x lg:py-8">
                     <Badge
